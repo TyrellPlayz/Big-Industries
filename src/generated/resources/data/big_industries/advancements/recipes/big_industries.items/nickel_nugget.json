@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "big_industries:nickel_nugget"
+    ]
+  },
+  "criteria": {
+    "has_nickel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ore/nickel"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "big_industries:nickel_nugget"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_nickel",
+      "has_the_recipe"
+    ]
+  ]
+}

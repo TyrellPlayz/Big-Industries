@@ -1,0 +1,23 @@
+{
+  "multipart": [
+    {   "apply": { "model": "big_industries:block/energy_conduit_middle" }},
+    {   "when": { "north": "true" },
+      "apply": { "model": "big_industries:block/energy_conduit_side", "uvlock": true }
+    },
+    {   "when": { "east": "true" },
+      "apply": { "model": "big_industries:block/energy_conduit_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true" },
+      "apply": { "model": "big_industries:block/energy_conduit_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true" },
+      "apply": { "model": "big_industries:block/energy_conduit_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true" },
+      "apply": { "model": "big_industries:block/energy_conduit_side", "x": -90, "uvlock": true }
+    },
+    {   "when": { "down": "true" },
+      "apply": { "model": "big_industries:block/energy_conduit_side", "x": 90, "uvlock": true }
+    }
+  ]
+}

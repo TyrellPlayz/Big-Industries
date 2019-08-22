@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:crushed/copper"
+  },
+  "result": "big_industries:copper_ingot",
+  "experience": 0.0,
+  "cookingtime": 200
+}

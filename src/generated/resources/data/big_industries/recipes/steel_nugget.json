@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ingot/steel"
+    }
+  ],
+  "result": {
+    "item": "big_industries:steel_nugget",
+    "count": 9
+  }
+}

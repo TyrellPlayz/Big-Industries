@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ingot/lead"
+    }
+  ],
+  "result": {
+    "item": "big_industries:lead_nugget",
+    "count": 9
+  }
+}

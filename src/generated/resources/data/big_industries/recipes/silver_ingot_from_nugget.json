@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "big_industries:silver_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nugget/silver"
+    }
+  },
+  "result": {
+    "item": "big_industries:silver_ingot"
+  }
+}

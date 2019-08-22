@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "big_industries:tin_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nugget/tin"
+    }
+  },
+  "result": {
+    "item": "big_industries:tin_ingot"
+  }
+}

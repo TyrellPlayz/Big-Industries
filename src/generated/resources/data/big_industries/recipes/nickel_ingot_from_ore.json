@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:ore/nickel"
+  },
+  "result": "big_industries:nickel_ingot",
+  "experience": 0.0,
+  "cookingtime": 200
+}

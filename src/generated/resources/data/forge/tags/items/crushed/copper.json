@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "big_industries:copper_crushed",
+    "big_industries:lead_crushed",
+    "big_industries:tin_crushed",
+    "big_industries:silver_crushed",
+    "big_industries:nickel_crushed",
+    "big_industries:steel_crushed",
+    "big_industries:bronze_crushed",
+    "big_industries:invar_crushed"
+  ]
+}

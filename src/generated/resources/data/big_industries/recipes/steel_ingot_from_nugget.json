@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "big_industries:steel_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nugget/steel"
+    }
+  },
+  "result": {
+    "item": "big_industries:steel_ingot"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "big_industries:nickel_ingot",
+  "ingredients": [
+    {
+      "tag": "forge:block/nickel"
+    }
+  ],
+  "result": {
+    "item": "big_industries:nickel_ingot",
+    "count": 9
+  }
+}

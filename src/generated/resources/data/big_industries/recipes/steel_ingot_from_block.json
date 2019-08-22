@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "big_industries:steel_ingot",
+  "ingredients": [
+    {
+      "tag": "forge:block/steel"
+    }
+  ],
+  "result": {
+    "item": "big_industries:steel_ingot",
+    "count": 9
+  }
+}

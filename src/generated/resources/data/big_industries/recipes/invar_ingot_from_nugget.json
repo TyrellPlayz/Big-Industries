@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "big_industries:invar_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:nugget/invar"
+    }
+  },
+  "result": {
+    "item": "big_industries:invar_ingot"
+  }
+}

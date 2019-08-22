@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [],
+  "result": "big_industries:invar_ingot",
+  "experience": 0.0,
+  "cookingtime": 200
+}

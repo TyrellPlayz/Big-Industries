@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ingot/invar"
+    }
+  ],
+  "result": {
+    "item": "big_industries:invar_nugget",
+    "count": 9
+  }
+}

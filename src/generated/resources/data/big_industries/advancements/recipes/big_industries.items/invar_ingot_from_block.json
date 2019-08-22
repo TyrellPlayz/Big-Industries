@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "big_industries:invar_ingot_from_block"
+    ]
+  },
+  "criteria": {
+    "has_invar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingot/invar"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "big_industries:invar_ingot_from_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_invar",
+      "has_the_recipe"
+    ]
+  ]
+}

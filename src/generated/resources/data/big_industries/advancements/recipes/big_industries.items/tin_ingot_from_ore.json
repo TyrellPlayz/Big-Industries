@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "big_industries:tin_ingot_from_ore"
+    ]
+  },
+  "criteria": {
+    "has_tin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ore/tin"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "big_industries:tin_ingot_from_ore"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tin",
+      "has_the_recipe"
+    ]
+  ]
+}

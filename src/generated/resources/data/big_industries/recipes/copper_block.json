@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingot/copper"
+    }
+  },
+  "result": {
+    "item": "big_industries:copper_block"
+  }
+}

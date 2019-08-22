@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "big_industries:silver_nugget"
+    ]
+  },
+  "criteria": {
+    "has_silver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ore/silver"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "big_industries:silver_nugget"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_silver",
+      "has_the_recipe"
+    ]
+  ]
+}
