@@ -1,4 +1,6 @@
-package com.tyrellplayz.big_industries;
+package com.tyrellplayz.big_industries.util;
+
+import com.tyrellplayz.big_industries.BigIndustries;
 
 public class ItemNames {
 

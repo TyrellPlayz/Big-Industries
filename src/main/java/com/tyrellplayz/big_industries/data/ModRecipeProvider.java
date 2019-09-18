@@ -78,39 +78,4 @@ public class ModRecipeProvider extends RecipeProvider {
         return BigIndustries.NAME+" Recipes";
     }
 
-    /**
-     * Creates a new {@link EnterBlockTrigger} for use with recipe unlock criteria.
-     */
-    private EnterBlockTrigger.Instance enteredBlock(Block blockIn) {
-        return new EnterBlockTrigger.Instance(blockIn, null);
-    }
-
-    /**
-     * Creates a new {@link InventoryChangeTrigger} that checks for a player having a certain amount of an item.
-     */
-    private InventoryChangeTrigger.Instance hasItem(MinMaxBounds.IntBound amount, IItemProvider itemIn) {
-        return this.hasItem(ItemPredicate.Builder.create().item(itemIn).count(amount).build());
-    }
-
-    /**
-     * Creates a new {@link InventoryChangeTrigger} that checks for a player having a certain item.
-     */
-    private InventoryChangeTrigger.Instance hasItem(IItemProvider itemIn) {
-        return this.hasItem(ItemPredicate.Builder.create().item(itemIn).build());
-    }
-
-    /**
-     * Creates a new {@link InventoryChangeTrigger} that checks for a player having an item within the given tag.
-     */
-    private InventoryChangeTrigger.Instance hasItem(Tag<Item> tagIn) {
-        return this.hasItem(ItemPredicate.Builder.create().tag(tagIn).build());
-    }
-
-    /**
-     * Creates a new {@link InventoryChangeTrigger} that checks for a player having a certain item.
-     */
-    private InventoryChangeTrigger.Instance hasItem(ItemPredicate... predicates) {
-        return new InventoryChangeTrigger.Instance(MinMaxBounds.IntBound.UNBOUNDED, MinMaxBounds.IntBound.UNBOUNDED, MinMaxBounds.IntBound.UNBOUNDED, predicates);
-    }
-
 }

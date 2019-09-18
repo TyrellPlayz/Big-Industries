@@ -1,8 +1,8 @@
 package com.tyrellplayz.big_industries.core;
 
 import com.tyrellplayz.big_industries.BigIndustries;
-import com.tyrellplayz.big_industries.ItemNames;
 import com.tyrellplayz.big_industries.item.ItemBurnable;
+import com.tyrellplayz.big_industries.util.ItemNames;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,7 +14,6 @@ import java.util.List;
 @SuppressWarnings("unused")
 @Mod.EventBusSubscriber(modid = BigIndustries.ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModItems {
-
     public static final List<Item> ITEMS = new ArrayList<>();
 
     // Copper
@@ -69,17 +68,21 @@ public class ModItems {
     public static final Item EMERALD_CRUSHED = register(ItemNames.EMERALD_CRUSHED,new Item(new Item.Properties().group(BigIndustries.ITEMS_GROUP)));
     public static final Item OBSIDIAN_CRUSHED = register(ItemNames.OBSIDIAN_CRUSHED,new Item(new Item.Properties().group(BigIndustries.ITEMS_GROUP)));
 
-    private static Item register(String name, Item item){
-        item.setRegistryName(name);
+    /**
+     * Registers a new {@link Item}.
+     * @param id The id of the {@link Item}.
+     * @param item The {@link Item}.
+     * @return The {@link Item}.
+     */
+    protected static Item register(String id, Item item){
+        item.setRegistryName(id);
         ITEMS.add(item);
         return item;
     }
 
-    @SuppressWarnings("unused")
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
         ITEMS.forEach(item -> event.getRegistry().register(item));
     }
-
 
 }

@@ -1,4 +1,6 @@
-package com.tyrellplayz.big_industries;
+package com.tyrellplayz.big_industries.util;
+
+import com.tyrellplayz.big_industries.BigIndustries;
 
 public class BlockNames {
 
@@ -23,4 +25,7 @@ public class BlockNames {
     public static final String BRONZE_BLOCK = BigIndustries.ID+":bronze_block";
     // Invar
     public static final String INVAR_BLOCK = BigIndustries.ID+":invar_block";
+
+    public static final String ENERGY_CONDUIT = BigIndustries.ID+":energy_conduit";
+
 }

@@ -1,9 +1,9 @@
 package com.tyrellplayz.big_industries.proxy;
 
-public class CommonProxy {
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
-    public void setup() {
+public interface CommonProxy {
 
-    }
+    void onCommonSetup(FMLCommonSetupEvent event);
 
 }

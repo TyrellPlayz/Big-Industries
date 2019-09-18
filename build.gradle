@@ -80,7 +80,7 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
-            args '--mod', 'big_industries', '--all', '--output', file('src/generated/resources/'), '--input', file('src/main/resources')
+            args '--mod', 'big_industries', '--all', '--output', file('src/main/generated/resources/'), '--input', file('src/main/resources')
             mods {
                 big_industries {
                     source sourceSets.main
@@ -115,6 +115,8 @@ dependencies {
 
     compileOnly fg.deobf("mezz.jei:jei-${project.minecraft_version}:${project.jei_version}")
     runtimeOnly fg.deobf("mezz.jei:jei-${project.minecraft_version}:${project.jei_version}")
+
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..

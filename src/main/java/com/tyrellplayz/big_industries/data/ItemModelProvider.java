@@ -11,7 +11,8 @@ import net.minecraft.data.IDataProvider;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;

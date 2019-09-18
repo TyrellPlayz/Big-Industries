@@ -23,11 +23,30 @@ import java.util.function.Supplier;
 @Mod.EventBusSubscriber(modid = BigIndustries.ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModTile {
     private static final Logger LOGGER = BigIndustries.LOGGER;
+    public static final List<TileEntityType<?>> TILES = new ArrayList<>();
 
-    private static final List<TileEntityType<?>> TILES = new ArrayList<>();
+    //public static TileEntityType<EnergyConduitTile> ENERGY_CONDUIT = register(new ResourceLocation(TileNames.ENERGY_CONDUIT), EnergyConduitTile::new, ModBlocks.ENERGY_CONDUIT);
 
+    /**
+     * Creates and Registers a new {@link TileEntityType}.
+     * @param id The id of the {@link TileEntity}.
+     * @param factoryIn A new instance of the TileEntities class (Eg MyTile::new).
+     * @param validBlocks Blocks that are linked to this tile.
+     * @param <T> The class of the {@link TileEntity}.
+     * @return The created {@link TileEntityType}.
+     */
+    private static <T extends TileEntity> TileEntityType<T> register(String id, Supplier<T> factoryIn, Block... validBlocks) {
+        return register(new ResourceLocation(id),factoryIn,validBlocks);
+    }
 
-
+    /**
+     * Creates and Registers a new {@link TileEntityType}.
+     * @param id The id of the {@link TileEntity}.
+     * @param factoryIn A new instance of the {@link TileEntity}s class (Eg MyTile::new).
+     * @param validBlocks Blocks that are linked to this tile.
+     * @param <T> The class of the {@link TileEntity}.
+     * @return The created {@link TileEntityType}.
+     */
     private static <T extends TileEntity> TileEntityType<T> register(ResourceLocation id, Supplier<T> factoryIn, Block... validBlocks){
         Validate.notNull(id,"Tile should have a registry name");
         Validate.notNull(factoryIn,"Tile factory is null for "+id.toString());
@@ -41,7 +60,7 @@ public class ModTile {
     private static Type<?> getDataFixer(ResourceLocation id) {
         try{
             return DataFixesManager.getDataFixer()
-                    .getSchema(DataFixUtils.makeKey(BigIndustries.DATAFIXER_VERSION))
+                    .getSchema(DataFixUtils.makeKey(BigIndustries.DATA_FIXER_VERSION))
                     .getChoiceType(TypeReferences.BLOCK_ENTITY, id.toString());
         }catch (IllegalArgumentException e){
             if(SharedConstants.developmentMode) throw e;
@@ -50,7 +69,6 @@ public class ModTile {
         }
     }
 
-    @SuppressWarnings("unused")
     @SubscribeEvent
     public static void registerTiles(final RegistryEvent.Register<TileEntityType<?>> event) {
         TILES.forEach(type -> event.getRegistry().register(type));
